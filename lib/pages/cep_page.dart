@@ -210,12 +210,6 @@ class _CepPageState extends State<CepPage> {
                     const SizedBox(
                       height: 15,
                     )
-
-                    //if (cepModel != null)
-                    /*CustomTitle.buildSubTitle(
-                    context,
-                    "dados de cep: \ncidade: ${cepModel!.localidade}\nbairro: ${cepModel!.bairro}\nuf: ${cepModel!.uf}"
-                    "")*/
                   ],
                 ),
               ),
