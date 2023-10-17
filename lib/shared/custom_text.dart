@@ -1,3 +1,4 @@
+import 'package:api_via_cep/models/cep_model.dart';
 import 'package:flutter/material.dart';
 
 class CustomTitle {
@@ -28,6 +29,19 @@ class CustomTitle {
     return Text(
       title,
       style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
+    );
+  }
+
+  static Widget buildSubTitleClick(
+      BuildContext context, String title, Function onClick) {
+    return InkWell(
+      onTap: () {
+        onClick();
+      },
+      child: Text(
+        title,
+        style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
+      ),
     );
   }
 
